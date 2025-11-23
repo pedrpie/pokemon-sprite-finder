@@ -25,6 +25,21 @@ async function fetchData() {
     }
 }
 
+async function loadPokemonNames() {
+    const response = await fetch("https://pokeapi.co/api/v2/pokemon?limit=2000");
+    const data = await response.json();
+
+    const datalist = document.getElementById("datalist");
+
+    data.results.forEach(pokemon => {
+        const option = document.createElement("option");
+        option.value = pokemon.name;
+        datalist.appendChild(option);
+    });
+}
+
+loadPokemonNames();
+
 document.addEventListener("DOMContentLoaded", () => {
     const pokemonNameInput = document.querySelector("#pokemonName")
     pokemonNameInput.addEventListener("keypress", (e) => {

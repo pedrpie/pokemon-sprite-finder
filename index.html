@@ -12,7 +12,8 @@
         <h1><span>Pokemon</span> Sprite Finder</h1>
         <p>Find sprites of any pokemon right now!</p> <br>
 
-        <input type="text" id="pokemonName" placeholder="Enter pokemon's name here">
+        <input type="text" id="pokemonName" list="datalist" placeholder="Enter pokemon's name here">
+        <datalist id="datalist"></datalist>
         <button id="findButton" onclick="fetchData()">Find Sprite</button> <br> <br>
 
         <h2 id="pokemonNameDisplay"></h2>
