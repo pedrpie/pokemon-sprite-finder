@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Sprite Finder</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <main>
+        <h1><span>Pokemon</span> Sprite Finder</h1>
+        <p>Find sprites of any pokemon right now!</p> <br>
+
+        <input type="text" id="pokemonName" placeholder="Enter pokemon's name here">
+        <button id="findButton" onclick="fetchData()">Find Sprite</button> <br> <br>
+
+        <h2 id="pokemonNameDisplay"></h2>
+        <img src="" id="pokemonSprite" alt="Pokemon Sprite" style="width: 300px; display: none;">
+    </main>
+
+    <footer>
+        <p>Developed by <a href="https://www.github.com/pedrpie">Pedro Costa</a> </p>
+    </footer>
+
+    <script src="script/index.js"></script>
+</body>
+</html>
